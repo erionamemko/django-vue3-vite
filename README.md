@@ -13,7 +13,8 @@ if you have windows : cd Scripts then type ./activate
 Once your env is active install django
 pip install django
 
-#You can then migrate your database and start the development server:
+#You can create your models and then migrate your database and start the development server:
+python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 
