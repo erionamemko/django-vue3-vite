@@ -5,5 +5,4 @@ from .models import Events
 class EventsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Events
-        fields = ('gender', 'age', 'country', 'segments')
-
+        fields = ('id', 'country', 'gender', 'age', 'segments')
