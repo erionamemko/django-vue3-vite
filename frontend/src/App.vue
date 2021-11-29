@@ -1,6 +1,4 @@
 <template>
-  <!-- <BaseHeader /> -->
-  <!-- with a fallback: -->
   <Suspense>
     <template #default>
       <div>
@@ -9,7 +7,7 @@
       </div>
     </template>
     <template #fallback>
-      <span>Loading...</span>
+      <div class="center">Loading...</div>
     </template>
   </Suspense>
 </template>
@@ -38,9 +36,14 @@ import BaseHeader from "./components/layouts/BaseHeader.vue";
 .main {
    padding: 1rem;
 }
+.center {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 30px;
+}
 .filters {
-  /* display: flex;
-  justify-content: space-between; */
   margin-top: 50px;
   border-top: 2px solid rgb(207, 207, 207);
   border-top-left-radius: 10px;
