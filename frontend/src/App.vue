@@ -24,7 +24,7 @@ import BaseHeader from "./components/layouts/BaseHeader.vue";
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-.el-menu{
+.el-menu {
   font-size: 25px;
   background-color: #41b8c0;
   color: white;
@@ -34,7 +34,7 @@ import BaseHeader from "./components/layouts/BaseHeader.vue";
   font-size: 20px;
 }
 .main {
-   padding: 1rem;
+  padding: 1rem;
 }
 .center {
   text-align: center;
@@ -62,7 +62,7 @@ import BaseHeader from "./components/layouts/BaseHeader.vue";
   margin-bottom: 10px;
 }
 .el-input__suffix {
-top: 9px;
+  top: 9px;
 }
 
 .el-select {
