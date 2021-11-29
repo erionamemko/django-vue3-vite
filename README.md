@@ -1,4 +1,4 @@
-#BACKEND REQUIREMENTS:
+# BACKEND REQUIREMENTS:
  Python 3, PIP, and venv
  
  You don't need to install a full-fledged database management system to develop with Django.
@@ -21,18 +21,17 @@ python manage.py runserver
 
 if you want to create a new app type:
 django-admin startproject <new-app> .
-django
-└── new-app
-    ├── manage.py
-    ├── requirements.txt
-    └── backend
-        ├── __init__.py
-        ├── asgi.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+
 then create a catalog to organise your project:
 python manage.py startapp catalog
 on your setting.py add your app 'catalog'
 
-
+to create a db from an csv file :
+ add sqlite3.exe on route fine and then on command line:
+ ./sqlite3.exe db.sqlite3
+ .mode csv
+ import file.csv catalog_events
+ 
+ if you want to see the table from browser create a superuser:
+ python manage.py createsuperuser --username=name --email=name@gmail.com
+ 
