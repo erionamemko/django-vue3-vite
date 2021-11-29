@@ -3,7 +3,10 @@
   <!-- with a fallback: -->
   <Suspense>
     <template #default>
-      <HelloWorld />
+      <div>
+        <BaseHeader />
+        <Main />
+      </div>
     </template>
     <template #fallback>
       <span>Loading...</span>
@@ -12,8 +15,8 @@
 </template>
 
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-// import BaseHeader from "./components/layouts/BaseHeader.vue";
+import Main from "./components/Main.vue";
+import BaseHeader from "./components/layouts/BaseHeader.vue";
 </script>
 
 <style>
@@ -21,9 +24,46 @@ import HelloWorld from "./components/HelloWorld.vue";
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.el-menu{
+  font-size: 25px;
+  background-color: #41b8c0;
+  color: white;
+}
+.el-menu-item {
+  color: white !important;
+  font-size: 20px;
+}
+.main {
+   padding: 1rem;
+}
+.filters {
+  /* display: flex;
+  justify-content: space-between; */
+  margin-top: 50px;
+  border-top: 2px solid rgb(207, 207, 207);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-left: 1px solid rgb(207, 207, 207);
+  border-right: 1px solid rgb(207, 207, 207);
+  max-width: 1700px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.spaces {
+  margin-left: 10px;
+}
+.filter-wrapper {
+  margin-bottom: 10px;
+}
+.el-input__suffix {
+top: 9px;
+}
+
+.el-select {
+  margin-right: 10px;
 }
 table {
   font-family: arial, sans-serif;
